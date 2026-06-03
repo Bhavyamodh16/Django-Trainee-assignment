@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 @receiver(post_save, sender=User)
 def slow_signal_receiver(sender, instance, created, **kwargs):
     print("Signal started...")
-    time.sleep(5) 
+    time.sleep(5)
     print("Signal finished!")
 
 
